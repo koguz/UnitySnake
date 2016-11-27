@@ -18,7 +18,7 @@ public class GamePlay : MonoBehaviour {
 
 	private bool running = false;
 	private bool gameover = false;
-	private bool pressed = false;
+	// private bool pressed = false;
 
 	private int grid = 30;
 
@@ -65,6 +65,7 @@ public class GamePlay : MonoBehaviour {
 	}
 
 	private void createWall() {
+		/* this is a temporary function. */
 		for (int i = 4; i < 12; i++) {
 			area [i, 3] = 3;
 			GameObject temp = GameObject.CreatePrimitive (PrimitiveType.Cube);
@@ -184,7 +185,7 @@ public class GamePlay : MonoBehaviour {
 			} else if (s == -1) {
 				gameover = true;
 			}
-			pressed = false;
+			// pressed = false;
 		}
 
 	}
